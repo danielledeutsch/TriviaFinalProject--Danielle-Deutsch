@@ -1,0 +1,22 @@
+﻿<Window x:Class="TriviaFinalProject.View.HardGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TriviaFinalProject.View"
+        mc:Ignorable="d"
+        Title="HardGame" Height="450" Width="800">
+    <Grid>
+        <MediaElement Source="C:\Users\danie\source\repos\TriviaFinalProject\TriviaFinalProject\correctSound.m4a" LoadedBehavior="Manual"  Name="correctSound"/>
+        <Image Source="https://i.pinimg.com/564x/a8/8a/5f/a88a5fc39c1e979cbf3b501069f568aa.jpg" Stretch="fill"/>
+        <TextBlock x:Name="QuestionTextBlock" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,84,0,0" TextWrapping="Wrap" Text="Question will appear here" FontSize="18" FontFamily="Gill Sans Ultra Bold"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <Button x:Name="AnswerButton1" Content="Answer 1" Width="200" Margin="5" Click="AnswerButton_Click"/>
+            <Button x:Name="AnswerButton2" Content="Answer 2" Width="200" Margin="5" Click="AnswerButton_Click"/>
+            <Button x:Name="AnswerButton3" Content="Answer 3" Width="200" Margin="5" Click="AnswerButton_Click"/>
+            <Button x:Name="AnswerButton4" Content="Answer 4" Width="200" Margin="5" Click="AnswerButton_Click"/>
+        </StackPanel>
+        <TextBlock x:Name="ResultTextBlock" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="71,0,0,235" FontSize="20" FontFamily="Goudy Stout"/>
+        <Button Content="Continue" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10,50,10,10" Click="ContinueButton_Click"/>
+    </Grid>
+</Window>

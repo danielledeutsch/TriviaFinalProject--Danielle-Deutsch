@@ -1,0 +1,31 @@
+﻿<Window x:Class="TriviaFinalProject.View.AdminControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Admin Control" Height="460" Width="400">
+    <Grid>
+        <Image Source="https://i.pinimg.com/564x/41/82/c2/4182c223254f9b08fd10027679f56939.jpg" Stretch="Fill"/>
+        <StackPanel Margin="20,35,20,-15">
+            <TextBlock Text="Enter user email to delete:" Margin="0 0 0 10" Foreground="#FFF3EBEB" FontSize="14" FontFamily="Segoe UI Black"/>
+            <TextBox x:Name="EmailTextBox" Margin="0 0 0 10"/>
+            <Button Content="Delete User" Click="DeleteUser_Click"/>
+            <TextBlock Text="Enter new question:" Margin="0 0 0 10" FontSize="14" Foreground="#FFFBF6F6" FontFamily="Segoe UI Black"/>
+            <TextBox x:Name="QuestionTextBox" Margin="0 0 0 10"/>
+            <TextBlock Text="Enter possible answers:" Margin="0 10 0 10" FontFamily="Segoe UI Black" FontSize="14" Foreground="#FFFDF8F8"/>
+            <TextBox x:Name="Answer1TextBox" Margin="0 0 0 5"/>
+            <TextBox x:Name="Answer2TextBox" Margin="0 0 0 5"/>
+            <TextBox x:Name="Answer3TextBox" Margin="0 0 0 5"/>
+            <TextBox x:Name="Answer4TextBox" Margin="0 0 0 10"/>
+
+            <TextBlock Text="Select correct answer:" Margin="0 0 0 0" FontFamily="Segoe UI Black" Foreground="#FFF1E8E8" FontSize="14"/>
+            <ComboBox x:Name="CorrectAnswerComboBox" Margin="0 0 0 10">
+                <ComboBoxItem Content="Answer 1" Tag="1"/>
+                <ComboBoxItem Content="Answer 2" Tag="2"/>
+                <ComboBoxItem Content="Answer 3" Tag="3"/>
+                <ComboBoxItem Content="Answer 4" Tag="4"/>
+            </ComboBox>
+            <Button Content="Add Question" Click="AddQuestion_Click" Margin="0 10 0 0"/>
+            <TextBlock x:Name="StatusTextBlock" Foreground="#FFF1EDED"/>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="76,10,0,0" TextWrapping="Wrap" Text="Hello Admin" VerticalAlignment="Top" Width="208" FontSize="24" Foreground="#FFF3EBEB" FontFamily="Gill Sans Ultra Bold"/>
+    </Grid>
+</Window>
